@@ -526,9 +526,10 @@ flex-basis: calc((100% - 48px) / 3);
 }
 .modal {
     position: relative;
-    /* width: 100%; */
-width: 408px;
-    height: 584px;
+ width: 100%;
+max-width: 408px;
+height: 100%;
+    max-height: 584px;
     overflow-y: auto;
     border-radius: 4px;
         background: #FCFCFC;
@@ -554,6 +555,7 @@ border-radius: 50%;
         line-height: 1.5;
         letter-spacing: 0.02em;
         margin-bottom: 16px;
+        margin-top: 72px;
 }
 .modal-fild {
     margin-bottom: 8px;
@@ -576,10 +578,17 @@ border-radius: 50%;
         border: 1px solid rgba(46, 47, 66, 0.40);
         height: 120px;
         width: 100%;
-        resize: none;
-        
-        
+        resize: none; 
+        font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.04em;
+            padding: 6px 16px;
 }
+.privacy-policy {
+    text-decoration: underline;
+    color: var(--color-logo-button);
+}
+
 
  /* .is-open {
     opacity: 1;
