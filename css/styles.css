@@ -506,23 +506,39 @@ flex-basis: calc((100% - 48px) / 3);
 
 /* Modal */
 .backdrop {
-    opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+
         position: fixed;
         inset: 0;
-        background-color:rgba(0, 0, 0, 0.7);  
-        /* Change bcg  */
+        padding: 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 .modal {
+    position: relative;
+    width: 100%;
+    max-width: 408px;
+    max-height: 584px;
+    overflow-y: auto;
     border-radius: 4px;
         background: #FCFCFC;
-        width: 408px;
-        position: relative;
         padding: 24px;
+        transform: scale(1);
+        transition: transform 250ms ease-in-out;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(0);
 }
 .modal-close {
 position: absolute;
@@ -532,8 +548,8 @@ border-radius: 50%;
 
 }
 
- .is-open {
+ /* .is-open {
     opacity: 1;
         visibility: visible;
         pointer-events: auto;
-    }
+    } */
