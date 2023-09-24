@@ -508,7 +508,9 @@ flex-basis: calc((100% - 48px) / 3);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-left: 80px;
+    align-items: flex-start;
 }
 
 
