@@ -520,6 +520,7 @@ flex-basis: calc((100% - 48px) / 3);
     display: flex;
         align-items: center;
         justify-content: center;
+        gap: 24px;
         
 }
 .footer-form-input {
@@ -550,7 +551,6 @@ background-color: var(--color-logo-button);
             letter-spacing: 0.04em;
             border-radius: 4px;
             cursor: pointer;
-           margin-left: 24px;
            border: none;
 }
  
