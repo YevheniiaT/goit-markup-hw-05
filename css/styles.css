@@ -503,7 +503,9 @@ flex-basis: calc((100% - 48px) / 3);
     color: var(--bcg-color-light);
 }
 
-
+.footer-form-class {
+    display: flex;
+}
 .footer-form-email {
     display: flex;
     align-items: center;
@@ -518,6 +520,7 @@ flex-basis: calc((100% - 48px) / 3);
     display: flex;
         align-items: center;
         justify-content: center;
+        
 }
 .footer-form-input {
     font-size: 12px;
