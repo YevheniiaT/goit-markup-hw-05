@@ -681,19 +681,20 @@ border-color: #4D5AE5;
 .textarea {
     border-radius: 4px;
         border: 1px solid rgba(46, 47, 66, 0.40);
-        color: rgba(46, 47, 66, 0.4);
         background-color: transparent;
         outline: transparent;
         padding: 8px 16px;
         height: 120px;
         width: 100%;
         resize: none; 
-        font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.04em;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.textarea::placeholder {
+color: rgba(46, 47, 66, 0.4);
+font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
  .textarea-div {
     margin-bottom: 16px;
 }
@@ -744,11 +745,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     gap: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-checkbox-icon {
-    stroke-width: 1px;
-    opacity: 0;
 
-}
 .modal-checkbox-check {
     display: inline-flex;
         align-items: center;
@@ -766,6 +763,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #404bbf;
         fill: #F4F4FD;
         border: none;
+        
+       
 }
 
 /* .privacy-policy-wrapper:active .modal-checkbox-icon {
