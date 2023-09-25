@@ -623,6 +623,8 @@ min-height: 584px;
 position: absolute;
 top: 24px;
 right: 24px;
+width: 24px;
+    height: 24px;
 border-radius: 50%;
 display: flex;
 align-items: center;
